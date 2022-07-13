@@ -1,0 +1,18 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<input
+  type="number"
+  placeholder="enter the limit"
+  id="maxLimit"
+  [(ngModel)]="maxLimit"
+/>
+<input
+  type="number"
+  placeholder="enter time interval"
+  id="interval"
+  [(ngModel)]="interval"
+/>
+<button type="button" (click)="onStart()">Start Counter</button>
+<button type="button" (click)="onStop()">Stop Counter</button>
+<button type="button" (click)="onReset()">Reset Counter</button>
+<p>{{ count }}</p>
